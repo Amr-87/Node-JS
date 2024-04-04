@@ -17,6 +17,7 @@ Clone the repository to your local machine:
 
 bash >
 git clone https://github.com/Amr-87/Node-JS.git
+
 Navigate to the project directory:
 
 bash >
