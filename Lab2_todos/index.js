@@ -6,7 +6,6 @@ const app = express();
 
 app.use(express.json());
 
-
 app.get('/todos', (req, res) => {
     console.log(`Get request received`);
     fs.readFile('./todos.json', 'utf-8', (err, data) => {
@@ -19,7 +18,6 @@ app.get('/todos', (req, res) => {
         }
     });
 });
-
 
 app.post('/todos', (req, res) => {
     console.log(`Post request received`);
@@ -142,8 +140,6 @@ app.delete('/todos', (req, res) => {
         }
     });
 });
-
-
 
 const port = 3333 ;
 app.listen(port, ()=> console.log(`server listening on http://localhost:${port}...`));
